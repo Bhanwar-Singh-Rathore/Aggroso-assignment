@@ -29,7 +29,7 @@ Return ONLY valid JSON. No markdown.
       headers: {
         Authorization: `Bearer ${API_KEY}`,
         "Content-Type": "application/json",
-        "HTTP-Referer": "http://localhost:5173",
+        "HTTP-Referer": window.location.origin,
         "X-Title": "Meeting Tracker AI",
       },
       body: JSON.stringify(payload),
@@ -80,7 +80,7 @@ Be concise and helpful.
       headers: {
         Authorization: `Bearer ${API_KEY}`,
         "Content-Type": "application/json",
-        "HTTP-Referer": "http://localhost:5173",
+        "HTTP-Referer": window.location.origin,
         "X-Title": "Meeting Tracker AI Chat",
       },
       body: JSON.stringify(payload),
